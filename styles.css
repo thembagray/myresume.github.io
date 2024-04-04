@@ -1,0 +1,270 @@
+/* Styling the navigation bar */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  z-index: 1; /* making sure navbar stays above other content */
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  text-decoration: none;
+  flex: 1;
+}
+
+/* Styling for main content */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: peachpuff; /* Background color for the whole page */
+  color: black; /* Default text color */
+}
+
+/* Styling for sections */
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Font styles */
+.headline {
+  font-family: 'Times New Roman', serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  color: #6d62ce;
+  text-align: start;
+}
+
+.sub-heading {
+  font-family: 'Lucida Console', Monospace;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  text-align: start;
+
+}
+
+.about-content {
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Styling for footer */
+footer {
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* Styling for the image container */
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+/* Styling for the image */
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.logos {
+  padding: 20px;
+  text-align: center; /* Center the logos */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Align items vertically */
+}
+
+.logo-container img {
+  width: 100px; /* Adjust the size of the image */
+  height: auto;
+  margin-right: 10px; /* Add some space between the image and text */
+}
+
+.logo-item {
+  display: inline-block; /* Display the logos on the same line */
+  margin: 0 20px; /* Adjust the spacing between logos */
+  text-align: center;
+}
+
+.logo-item img {
+  width: 100px; /* Adjust the size of the logos as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Styling for name and career */
+.name-career {
+  font-family: 'Times New Roman', serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.case-study {
+  padding: 50px 0; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Example background color */
+}
+
+.case-study-container {
+  position: relative;
+  text-align: center;
+}
+
+.background-image {
+  width: 95%;
+  height: 30%; /* Fills the width of the container */
+}
+
+.foreground-image {
+  position: absolute;
+  width: 65%;
+  height: 80%;
+  left: 50%;
+  bottom: 0;
+  bottom: -120px; /* Adjust the value to move the foreground image down */
+  transform: translateX(-50%);
+}
+
+/* Styling for progress bars */
+.progress-bar-container {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  background-color: #007bff;
+  height: 20px;
+  border-radius: 20px;
+}
+
+/* Styling for expertise details */
+.expertise-detail {
+  margin-bottom: 5px;
+}
+
+/* Styling for certificates */
+#certs ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+}
+
+#certs h2 img {
+  display: block;
+  margin: 0 auto;
+  width: 70%; /* Adjusted width */
+}
+
+#certs ul li {
+  margin-bottom: 10px;
+}
+
+/* Styling for the grid layout */
+.grid-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  flex-basis: calc(50% - 20px);
+  margin: 0 10px;
+}
+
+.grid-item2 {
+  flex-basis: calc(50% - 20px);
+  margin: 0 10px;
+  font-family: 'Lucida Console', Monospace;
+  font-size: 25px;
+  text-align: start;
+
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.chat-icon i {
+  font-size: 100px; /* Adjust the size as needed */
+  color: rgb(168, 168, 233);
+  font-weight: bold;
+}
+
+.icon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+
+/* CSS for chat popup */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 300px;
+  background-color: #d0cbee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+/* CSS for close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
